@@ -1,12 +1,12 @@
 <div id="page" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 <!-- ______________________ HEADER _______________________ -->
   <header id="header">
-    <?php if ($logo): ?>
+    <?php if ($logo && false): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>"/>
       </a>
     <?php endif; ?>
-    <?php if ($site_name || $site_slogan): ?>
+    <?php if (($site_name || $site_slogan) && false): ?>
       <div id="name-and-slogan">
         <?php if ($site_name): ?>
           <?php if ($title): ?>
@@ -30,7 +30,7 @@
       </div>
     <?php endif; ?>
   </header> <!-- /header -->
-   <?php if ($main_menu || $secondary_menu || $page['navbar']): ?>
+   <?php if (($main_menu || $secondary_menu || $page['navbar']) && false): ?>
       <nav id="navigation" class="menu <?php !empty($main_menu) ? print "with-primary" : ''; !empty($secondary_menu) ? print " with-secondary" : ''; ?>">
         <?php print theme('links', array('links' => $main_menu, 'attributes' => array('id' => 'primary', 'class' => array('links', 'clearfix', 'main-menu')))); ?>
         <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary', 'class' => array('links', 'clearfix', 'sub-menu')))); ?>
