@@ -3,22 +3,11 @@
 
 
 
-/*function avvikk_custom_commerce_line_item_summary_link_info() {
-  return array(
-    'view_cart' => array(
-      'title' => t('View cart'),
-      'href' => 'cart',
-      'attributes' => array('rel' => 'nofollow'),
-      'weight' => 0,
-    ),
-    'checkout' => array(
-      'title' => t('Checkout'),
-      'href' => 'checkout',
-      'attributes' => array('rel' => 'nofollow'),
-      'weight' => 5,
-      'access' => user_access('access checkout'),
-    ),
-  );
-}*/
+function avvikk_custom_commerce_line_item_summary_link_info_alter(&$links) {
+  // Link checkout button to the cart.
+  if (isset($links['view_cart'])) {
+    $links['view_cart']['title'] = 'Cart';
+  }
+}
 
 ?>

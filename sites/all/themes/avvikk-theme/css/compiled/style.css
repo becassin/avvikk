@@ -1128,33 +1128,32 @@ a, a:hover, a:active, a:visited {
   top: 0;
   width: 100%;
   z-index: 2;
-  display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000341}}
 #header .block .view-content {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000345}}
 #header .block,
 #header .menu li {
   display: inline-block;
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000349}}
 #block-system-main-menu {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000352}}
 #block-system-main-menu li {
   text-align: center;
   width: 33%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000356}}
 #block-system-main-menu ul li.expanded ul {
   overflow: hidden;
   height: 0px;
@@ -1162,12 +1161,12 @@ a, a:hover, a:active, a:visited {
   -webkit-transition: all 0.4s linear 0s;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000362}}
 #block-system-main-menu ul li.expanded:hover ul {
   height: 50px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000365}}
 #block-system-main-menu ul li.expanded li {
   display: block;
   margin: 0;
@@ -1175,7 +1174,7 @@ a, a:hover, a:active, a:visited {
   width: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000373}}
 #header .block-views {
   position: absolute;
   top: 0;
@@ -1183,7 +1182,7 @@ a, a:hover, a:active, a:visited {
 }
 
 /*SECONDARY MENU*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000380}}
 #absolute_right {
   position: fixed;
   right: -64px;
@@ -1195,18 +1194,18 @@ a, a:hover, a:active, a:visited {
   transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000390}}
 #absolute_right ul {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000393}}
 #absolute_right li {
   display: inline-block;
 }
 
 /*MAIN*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/giom\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000398}}
 #main {
   padding-top: 100px;
 }
