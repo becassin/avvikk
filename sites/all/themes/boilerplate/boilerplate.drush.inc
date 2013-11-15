@@ -89,11 +89,9 @@ function drush_boilerplate($name = NULL, $machine_name = NULL) {
                                $drupal_root . $boilerplate_path);
   }
   // Prefer sites/[host]/themes/custom if it exists
-  $custom = str_replace('/contrib/', '/custom/', $newtheme_path, &$count);
-  if ($count and is_dir(preg_replace('|/[^/]+$|', '', $custom))) {
-    $newtheme_path = $custom;
-  }
-
+  if (strpos('/contrib/', $newtheme_path) and is_dir(preg_replace('|/[^/]+$|', '', $custom))) {
+    $newtheme_path = str_replace('/contrib/', '/custom/', $newtheme_path);
+  }  
   // Make a copy with our changes.
   drush_op('boilerplate_copy', $boilerplate_path . '/', $newtheme_path . '/');
 
