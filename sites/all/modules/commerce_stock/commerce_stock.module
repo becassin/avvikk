@@ -14,6 +14,12 @@
 /**
  * Implements hook_menu().
  */
+
+function commerce_stock_product_type_enabled($type) {
+  $instance = field_info_instance('commerce_product', 'commerce_stock', $type);
+  return (!empty($instance));
+}
+
 function commerce_stock_menu() {
   $items = array();
 
