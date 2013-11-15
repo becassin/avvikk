@@ -1,0 +1,3 @@
+name = Avvikk custom module
+description = A custom module for the Avvikk website.
+core = 7.x

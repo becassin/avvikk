@@ -12,3 +12,90 @@
 @import "modules";   // Defines module styles.
 //@import "mobile";   // We can now define our mobile styles inline
 @import "print";    // Defines styles for printing.
+
+
+/*OVERWRITE*/
+ul, li,
+ul li.leaf, 
+ul li.expanded{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a, a:hover, a:active, a:visited{
+	color:black;
+	text-decoration: none;	
+}
+
+
+/*HEADER*/
+#header{
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    display: none;
+}
+#header .block .view-content{
+	display: none;
+}
+#header .block,
+#header .menu li{
+	display: inline-block;
+	float: left;
+}
+#block-system-main-menu{
+	width:100%;
+}
+#block-system-main-menu li{
+    text-align: center;
+    width: 33%;
+}
+#block-system-main-menu ul li.expanded ul{
+    overflow: hidden;
+    height: 0px;
+	transition: all 0.4s linear 0s;
+	-webkit-transition: all 0.4s linear 0s;
+}
+#block-system-main-menu ul li.expanded:hover ul{
+    height: 50px;
+}
+#block-system-main-menu ul li.expanded li{
+	display: block;
+	margin:0;
+	float: none;
+	width:auto;
+}
+
+
+#header .block-views{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*SECONDARY MENU*/
+#absolute_right{
+    position: fixed;
+    right: -64px;
+    top: 50%;
+	-moz-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	-webkit-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	-o-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	-ms-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+	transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+}
+#absolute_right ul{
+	display: inline-block;
+}
+#absolute_right li{
+	display: inline-block;
+}
+
+/*MAIN*/
+#main{
+	padding-top: 100px;
+}

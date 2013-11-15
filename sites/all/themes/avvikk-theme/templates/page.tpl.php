@@ -96,4 +96,9 @@
       </footer> <!-- /footer -->
     <?php endif; ?>
   </div> <!-- /main -->
+  <?php if ($page['absolute_right']): ?>
+  <div id="absolute_right">
+    <?php print render($page['absolute_right']); ?>
+  </div>
+<?php endif; ?>
 </div> <!-- /page -->
