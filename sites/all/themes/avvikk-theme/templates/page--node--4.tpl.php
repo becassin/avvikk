@@ -1,4 +1,4 @@
-<div id="page" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<div id="page" class="collection_page <?php print $classes; ?>"<?php print $attributes; ?>>
 <!-- ______________________ HEADER _______________________ -->
   <header id="header">
     <?php if ($logo && false): ?>
@@ -67,7 +67,10 @@
           </div> <!-- /#content-header -->
         <?php endif; ?>
         <div id="content-area">
-          <?php print render($page['content']) ?>
+
+          
+          
+
         </div>
         <?php print $feed_icons; ?>
         <?php if ($page['content_bottom']): ?>
