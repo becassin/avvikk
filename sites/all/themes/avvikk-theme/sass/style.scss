@@ -26,18 +26,29 @@ a, a:hover, a:active, a:visited{
 	color:black;
 	text-decoration: none;	
 }
-
+h1, .h1{
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 4.2rem;
+}
 /* HELPERS */
 .centered_content{
   width: 960px;
   margin: 0 auto;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
 }
 
 
 
 /*MAIN*/
 #page{
-  width: auto;
+  // width: auto;
+  @extend .centered_content;
 }
 #main{
 	padding-top: 100px;
@@ -180,4 +191,51 @@ a, a:hover, a:active, a:visited{
   }
 }
 
+/* PRODUCT DISPLAY */
+.node-type-product-display{
+  #main .content{
+    @extend .centered_content;
+    article{
+      header, .field .field-label{
+        display: none;
+      }
+      .left{
+        width: 500px;
+      }
+      .right{
+        width: 400px;
+        margin-left: 60px;
+        .currency_select_menu li{
+          display: inline-block;
+        }
+        .field-type-commerce-product-reference{
+          label{
+            display: none;
+          }
+          .form-item-attributes-field-size{
+            .form-item, label{
+              display: inline-block;
+            }
+            input[type="radio"]{
+              display: none;
+            }
+            input[type="radio"]:checked+label{
+              text-decoration: underline;
+            }
+          }
+        }
+        input[type="submit"]{
+          background-color: #FFFFFF;
+          border: 1px solid;
+          font-size: 45px;
+        }
+      }
+    }
+  }
+}
 
+
+/*FRONTPAGE*/
+body.front{
+  text-align: center;
+}
