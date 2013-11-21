@@ -259,3 +259,25 @@ function avvikk_theme_menu_local_tasks(&$variables) {
   return $output;
 
 }
+
+
+
+
+/*CUSTOM HOOKS*/
+function avvikk_theme_radio($variables) {
+  $element = $variables['element'];
+  $element['#attributes']['type'] = 'radio';
+  element_set_attributes($element, array('id', 'name','#return_value' => 'value'));
+
+  if (isset($element['#return_value']) && $element['#value'] !== FALSE && $element['#value'] == $element['#return_value']) {
+    $element['#attributes']['checked'] = 'checked';
+  }
+  _form_set_class($element, array('form-radio'));
+
+  global $sold_out_items;
+  if(in_array("field_size", $element["#parents"]) && in_array(intval($element["#title"]), $sold_out_items)){
+    return '<span class="sold_out"></span>';
+  } else {
+    return '<input' . drupal_attributes($element['#attributes']) . ' />';
+  }
+}

@@ -222,6 +222,10 @@ h1, .h1{
             input[type="radio"]:checked+label{
               text-decoration: underline;
             }
+            span.sold_out+label{
+              color: grey;
+              cursor: default;
+            }
           }
         }
         input[type="submit"]{

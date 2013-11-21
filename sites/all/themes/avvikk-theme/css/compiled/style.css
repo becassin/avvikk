@@ -1331,7 +1331,12 @@ h1, .h1 {
 .node-type-product-display #main .content article .right .field-type-commerce-product-reference .form-item-attributes-field-size input[type="radio"]:checked + label {
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\00003225}}
+.node-type-product-display #main .content article .right .field-type-commerce-product-reference .form-item-attributes-field-size span.sold_out + label {
+  color: grey;
+  cursor: default;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\00003231}}
 .node-type-product-display #main .content article .right input[type="submit"] {
   background-color: #FFFFFF;
   border: 1px solid;
@@ -1339,7 +1344,7 @@ h1, .h1 {
 }
 
 /*FRONTPAGE*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\00003243}}
 body.front {
   text-align: center;
 }
