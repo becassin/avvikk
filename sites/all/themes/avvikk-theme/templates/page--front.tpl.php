@@ -70,7 +70,7 @@
 
           <div class="home_overlay">
             <img src="<?php global $base_url; echo($base_url) ?>/<?php echo path_to_theme() ?>/images/homepage/logo_main.png"/>
-            <div class="location">Oslo &#8212; Berlin</div>
+            <h2 class="location">Oslo &#8212; Berlin</h2>
           </div>
           
 

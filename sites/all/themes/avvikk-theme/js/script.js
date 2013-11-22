@@ -1,7 +1,8 @@
 /* Author: Dan Linn */
 (function($) {
+  'use strict'; 
   $(window).resize(function(){
-    if(!$(".mobileselect").length) {
+    if(!$('.mobileselect').length) {
       createMobileMenu();
     } else if ($(window).width()>=480) {
       $('#navigation ul').show();
@@ -14,7 +15,7 @@
   function createMobileMenu(){
     $('#navigation ul').mobileSelect({
       autoHide: true, // Hide the ul automatically
-      defaultOption: "Navigation", // The default select option
+      defaultOption: 'Navigation', // The default select option
       deviceWidth: 480, // The select will be added for screensizes smaller than this
       appendTo: '', // Used to place the drop-down in some location other than where the primary nav exists
       className: 'mobileselect', // The class name applied to the select element
@@ -25,18 +26,17 @@
     attach: function (context) {
       createMobileMenu();
     }
-  }
+  };
   
   $(document).ready(function(){
-  
-    $('#block-system-main-menu li.expanded').addClass('ajax_click');  
+    $('#block-system-main-menu li.expanded').addClass('ajax_click');
     $('.ajax_click').click(function(){
       if(!$(this).hasClass('clicked')){
         $('#block-system-main-menu li.expanded.clicked').removeClass('clicked');
       }
       $(this).toggleClass('clicked');
     });
-    $('.gallery').addClass('check').cycle();    
+    $('.gallery').addClass('check').cycle();
   });
   
 })(jQuery);

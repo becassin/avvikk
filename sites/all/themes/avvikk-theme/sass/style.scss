@@ -14,6 +14,13 @@
 @import "print";    // Defines styles for printing.
 
 
+/*VARIABLES*/
+$body_padding: 24px;
+$main_menu_font_size: 21px;
+$main_menu_letter_spacing: 5px;
+$sub_menu_font_size: 14px;
+
+
 /*OVERWRITE*/
 ul, li,
 ul li.leaf, 
@@ -31,9 +38,14 @@ h1, .h1{
   font-weight: normal;
   line-height: 4.2rem;
 }
+h2, .h2{
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 4.2rem;
+}
 /* HELPERS */
 .centered_content{
-  width: 960px;
+  width: 1200px;
   margin: 0 auto;
 }
 .left{
@@ -51,7 +63,7 @@ h1, .h1{
   @extend .centered_content;
 }
 #main{
-	padding-top: 100px;
+	padding-top: 120px;
 }
 
 /*HEADER*/
@@ -63,7 +75,7 @@ h1, .h1{
   top: 0;
   width: 100%;
   z-index: 2;
-  padding: 0;
+  padding: $body_padding;
   border: none;
   .block,
   .menu li{
@@ -75,10 +87,11 @@ h1, .h1{
   }
   .block-views{
   	position: absolute;
-  	top: 10px;
-  	left: 10px;
+  	top: 24px;
+  	left:  24px;
   	.links{
-    	font-size: 27px;
+    	font-size: $main_menu_font_size;
+      letter-spacing: $main_menu_letter_spacing;
   	}
   }
   #block-system-main-menu{
@@ -86,44 +99,53 @@ h1, .h1{
   	li{
       text-align: center;
       width: 33%;
+      font-size: $sub_menu_font_size;
     }
     ul{
       li{
-        min-height: 34px;
         .nolink{
           cursor: pointer;
-          font-size: 27px;
-          padding-top: 10px;
+          font-size: $main_menu_font_size;
+          letter-spacing: $main_menu_letter_spacing;
           display: inline-block;
           width: 100%;
           position: relative;
+          &.active-trail{
+            text-decoration: underline;
+          }
         }
       } 
       li.expanded {
         ul{
-          margin-top: -49%;
-          opacity: 0;
-          transition: all 0.4s linear 0s;
-          -webkit-transition: all 0.4s linear 0s;
           font-size: 19px;
+          padding-top: 14px;
           li{
-          	display: block;
-          	margin:0 0 9px;
-          	float: none;
-          	width:auto;
-            &.first{
-              margin-top: 14px;
-            }      
+            float: none;
+            margin: 0 auto -10px;
+            width: auto;
+            // display: none;
+            height: 0;
+            overflow: hidden;
+            display: block;
+            transition: all 0.4s linear 0s;
+            -webkit-transition: all 0.4s linear 0s;
+            a{
+              display: inline-block;
+            }  
+            &.active-trail{
+              // display: block;
+            height: 30px;
+            } 
           }
         }
         &.clicked{
           .nolink{
             text-decoration: underline;
-          }
-          ul{
-            margin-top: 0;
-            opacity: 1;
-          }        
+          } 
+          ul li{
+            // display: block;
+            height: 30px;
+          }      
         }
       }
     }
@@ -132,6 +154,7 @@ h1, .h1{
     text-align: center;
     .line-item-quantity{
       float: none;
+      font-size: $sub_menu_font_size;
     }
     .links li.last{
       padding: 0;
@@ -145,8 +168,9 @@ h1, .h1{
 /*SECONDARY MENU*/
 #absolute_right{
   position: fixed;
-  right: -95px;
+  right: -76px;
   top: 50%;
+  font-size:14px;
 	-moz-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 	-webkit-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 	-o-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
@@ -242,4 +266,66 @@ h1, .h1{
 /*FRONTPAGE*/
 body.front{
   text-align: center;
+  .home_overlay{
+    margin-top:125px;
+  }
+}
+
+/*COLLECTIONS*/
+.page-node-4{
+  #main{
+    position: absolute;
+    left: 0;
+  }
+  #content-inner{
+    padding: 0;
+  }
+  #content-area{
+    text-align: center;
+    img{
+      margin: 24px;
+      &:nth-child(1), &:nth-child(2){
+        margin-top:0;
+      }
+    }
+    .fullscreen_container .fullscreen {
+      width: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      font: 0/0 serif;
+      text-shadow: none;
+      color: transparent;
+      background-size: 100%;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+    .fullscreen_container .fullscreen .fullscreen_inner {
+      padding-top: 63.35%; /* height/width of image */
+      display: block;
+      height: 0;
+    }
+    /* default screen, non-retina */
+    .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_1200/public/collections/ss13/Avvikk_1744.jpg); }
+
+    @media only screen and (max-width: 320px) {
+        /* Small screen, non-retina */
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_768/public/collections/ss13/Avvikk_1744.jpg); }
+    }
+    @media only screen and (min-width: 321px) and (max-width: 538px) {
+        /* Medium screen, non-retina */
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_768/public/collections/ss13/Avvikk_1744.jpg); }
+    }
+    @media only screen and (min-width: 539px) and (max-width: 1200px) {
+        /* Medium screen, non-retina */
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_1200/public/collections/ss13/Avvikk_1744.jpg); }
+    }
+    @media only screen and (min-width: 1201px) and (max-width: 2000px) {
+        /* Medium screen, non-retina */
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_2000/public/collections/ss13/Avvikk_1744.jpg); }
+    }
+    @media only screen and (min-width: 2000px){
+        /* Medium screen, non-retina */
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/collections/ss13/Avvikk_1744.jpg); }
+    }
+  }
 }
