@@ -188,7 +188,7 @@ body{
 /*SECONDARY MENU*/
 #absolute_right{
   position: fixed;
-  right: -76px;
+  right: 28px;
   top: 50%;
   font-size:14px;
 	-moz-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
@@ -196,13 +196,17 @@ body{
 	-o-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 	-ms-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 	transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
-  #block-menu-menu-product-menu{
-    margin-top: 0;
+  .block-menu .content{
+    width: 0;
   }
   ul{
     display: inline-block;
+    width: 400px;
+    margin-left: -200px;
+    text-align: center;
     li{
       display: inline-block;
+      margin: 0 20px;
     }
   }
 }
