@@ -196,13 +196,17 @@ body{
 	-o-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 	-ms-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 	transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
+  #block-menu-menu-product-menu{
+    margin-top: 0;
+  }
+  ul{
+    display: inline-block;
+    li{
+      display: inline-block;
+    }
+  }
 }
-#absolute_right ul{
-	display: inline-block;
-}
-#absolute_right li{
-	display: inline-block;
-}
+  
 
 /* SHOP PAGES */
 .page-shop-men, .page-shop-women{
