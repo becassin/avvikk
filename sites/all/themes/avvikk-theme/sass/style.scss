@@ -497,5 +497,11 @@ body.front{
       margin-top: 20px;
     }
   }
-  
+}
+
+#commerce-checkout-form-checkout{
+  @extend .centered_content_960;
+  fieldset#edit-cart-contents{
+    display: none;
+  }
 }

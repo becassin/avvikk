@@ -1151,7 +1151,7 @@ h2, .h2 {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\0000364}}
-.centered_content_960, .view-commerce-cart-form {
+.centered_content_960, .view-commerce-cart-form, #commerce-checkout-form-checkout {
   width: 960px;
   margin: 0 auto;
 }
@@ -1665,4 +1665,9 @@ body.front .home_overlay {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\00003496}}
 .view-commerce-cart-form .line-item-summary .line-item-total-raw {
   margin-top: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/style\.scss}line{font-family:\00003504}}
+#commerce-checkout-form-checkout fieldset#edit-cart-contents {
+  display: none;
 }
