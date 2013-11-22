@@ -4,14 +4,14 @@
         <?php if (!$page): ?>
       <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
       <?php endif; ?>
-  
+
       <?php print $user_picture; ?>
           
       <?php if ($display_submitted): ?>
         <span class="submitted"><?php print $date; ?> — <?php print $name; ?></span>
       <?php endif; ?>
     </header>
-    <div class="content">
+    <div class="content centered_content_960">
       <div class="left"> 
         <div class="cycle-slideshow" 
             data-cycle-fx=scrollHorz
@@ -31,8 +31,8 @@
         <div class="description"><?php print render($content["field_description"]); ?></div>
       </div>
       <div class="right">
-        <h1><?php print render($content["field_images"]["#object"]->title); ?></h1>
-        <div class="h1"><?php print render($content["product:commerce_price"]); ?></div>
+        <h2><?php print render($content["field_images"]["#object"]->title); ?></h2>
+        <div class="h2"><?php print render($content["product:commerce_price"]); ?></div>
         <?php
           $block = module_invoke('commerce_multicurrency', 'block_view', 'currency_menu');
           print $block['content']; ?>
