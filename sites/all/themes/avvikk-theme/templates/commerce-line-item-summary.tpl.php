@@ -28,4 +28,9 @@
     <span class="line-item-quantity-raw">(<?php print $quantity_raw; ?>)</span>
   </div>
   <?php endif; ?>
+  <?php if ($total): ?>
+  <div class="line-item-total">
+    <div class="line-item-total-label">Total</div> <div class="line-item-total-raw"><?php print $total; ?></div>
+  </div>
+  <?php endif; ?>
 </div>

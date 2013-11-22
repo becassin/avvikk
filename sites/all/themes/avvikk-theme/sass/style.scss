@@ -71,6 +71,16 @@ h2, .h2{
 .right{
   float: right;
 }
+.big_button{
+  background-color: #FFFFFF;
+  border: 1px solid;
+  font-size: 45px;
+  padding: 0;
+  width: 240px;
+  margin-top: 120px;
+  font-size: 21px;
+  height: 50px;
+}
 
 
 
@@ -331,14 +341,7 @@ body{
               }            
           }
           input[type="submit"]{
-            background-color: #FFFFFF;
-            border: 1px solid;
-            font-size: 45px;
-            padding: 0;
-            width: 240px;
-            margin-top: 120px;
-            font-size: 14px;
-            height: 50px;
+            @extend .big_button;
           }
         }
       }
@@ -412,4 +415,87 @@ body.front{
         .fullscreen_container .fullscreen { background-image: url(/sites/default/files/collections/ss13/Avvikk_1744.jpg); }
     }
   }
+}
+
+/*CHECKOUT*/
+.view-commerce-cart-form{
+  @extend .centered_content_960;
+  font-size: 14px;
+  position: relative;
+  .views-table{
+   th{
+      font-weight: normal;
+      border: none;
+      font-size: 21px;
+      padding-bottom: 20px;
+      &:nth-child(2){
+        padding-right: 69px;
+      }
+      &:nth-child(3){
+        width: 127px;
+      }
+    }  
+    tbody{
+      border: none;
+      margin-top: 40px;
+    } 
+    tr.even, tr.odd{
+      background-color: transparent;
+      border: none;
+    }
+    tr.even td, tr.odd td{
+      padding: 20px 0 0;
+    }
+    h2, &{
+      font-size: 14px;
+    }
+    .views-field-edit-quantity .form-type-textfield, .delete_container{
+      display: inline-block;
+      &:before { 
+        content:"(";
+      }
+      &:after { 
+        content:")";
+      }
+      input{
+        border: 1px transparent;
+        background-color: transparent;
+        font-size: 14px;
+        &[type="text"]{
+          width: 11px;
+        }
+      }
+    }
+  }
+  .commerce-line-item-actions{
+    bottom: 0;
+    float: right;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    input{
+      @extend .big_button;
+      &#edit-submit{
+        display: none;
+      }
+    }
+  }
+  #commerce-paypal-ec-order-form{
+    display: none;
+  }
+  
+  .line-item-summary{
+    border-top: 1px solid;
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 20px;
+    .line-item-total-label{
+      font-weight: normal;
+      font-size: 21px; 
+    }
+    .line-item-total-raw{
+      margin-top: 20px;
+    }
+  }
+  
 }
