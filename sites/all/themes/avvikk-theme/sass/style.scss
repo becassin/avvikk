@@ -58,11 +58,11 @@ h2, .h2{
 }
 /* HELPERS */
 .centered_content{
-  width: 1200px;
+  width: 960px;
   margin: 0 auto;
 }
-.centered_content_960{
-  width: 960px;
+.centered_content_1200{
+  width: 1200px;
   margin: 0 auto;
 }
 .left{
@@ -225,7 +225,7 @@ body{
 /* SHOP PAGES */
 .page-shop-men, .page-shop-women{
   #main{
-  padding: 120px 120px 0; 
+  padding: 120px 0 0; 
   .content{
       .views-row{
         display: inline-block;
@@ -403,15 +403,15 @@ body.front{
         .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_768/public/collections/ss13/Avvikk_1744.jpg); }
     }
     @media only screen and (min-width: 539px) and (max-width: 1200px) {
-        /* Medium screen, non-retina */
+        /* Normal screen, non-retina */
         .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_1200/public/collections/ss13/Avvikk_1744.jpg); }
     }
     @media only screen and (min-width: 1201px) and (max-width: 2000px) {
-        /* Medium screen, non-retina */
+        /* Large screen, non-retina */
         .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_2000/public/collections/ss13/Avvikk_1744.jpg); }
     }
     @media only screen and (min-width: 2000px){
-        /* Medium screen, non-retina */
+        /* Larger screen, non-retina */
         .fullscreen_container .fullscreen { background-image: url(/sites/default/files/collections/ss13/Avvikk_1744.jpg); }
     }
   }
@@ -419,7 +419,6 @@ body.front{
 
 /*CHECKOUT*/
 .view-commerce-cart-form{
-  @extend .centered_content_960;
   font-size: 14px;
   position: relative;
   .views-table{
@@ -500,8 +499,13 @@ body.front{
 }
 
 #commerce-checkout-form-checkout{
-  @extend .centered_content_960;
   fieldset#edit-cart-contents{
     display: none;
   }
+}
+
+
+
+@media only screen and (max-width: 540px) {
+  @import "mobile";    // Defines styles for mobiles.
 }

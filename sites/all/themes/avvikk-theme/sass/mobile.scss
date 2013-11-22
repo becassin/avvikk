@@ -1,0 +1,27 @@
+.centered_content { 
+	width: 540px; 
+}
+.centered_content_1200 { 
+	width: 540px; 
+}
+#absolute_right { 
+	bottom: 0; left: 50%; top: auto; right: auto; transform: none;
+}
+#header .block-views{
+	display: none;
+}
+#header #block-system-main-menu li:nth-child(2) {
+    display: none;
+}
+.page-node-4 #main, 
+.page-node-4 #content-area, 
+.page-node-4  #content-inner.center, 
+.page-node-4  #content{
+	width: 100%;
+	img{
+		margin: 0;
+	}
+}
+img{
+	max-width: 100%;
+}

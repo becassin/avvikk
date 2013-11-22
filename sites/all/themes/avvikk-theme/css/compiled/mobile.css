@@ -1,0 +1,48 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\000031}}
+.centered_content {
+  width: 540px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\000034}}
+.centered_content_1200 {
+  width: 540px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\000037}}
+#absolute_right {
+  bottom: 0;
+  left: 50%;
+  top: auto;
+  right: auto;
+  transform: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000310}}
+#header .block-views {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000313}}
+#header #block-system-main-menu li:nth-child(2) {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000319}}
+.page-node-4 #main,
+.page-node-4 #content-area,
+.page-node-4 #content-inner.center,
+.page-node-4 #content {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000321}}
+.page-node-4 #main img,
+.page-node-4 #content-area img,
+.page-node-4 #content-inner.center img,
+.page-node-4 #content img {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000325}}
+img {
+  max-width: 100%;
+}

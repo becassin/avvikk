@@ -11,7 +11,7 @@
         <span class="submitted"><?php print $date; ?> — <?php print $name; ?></span>
       <?php endif; ?>
     </header>
-    <div class="content centered_content_960">
+    <div class="content">
       <div class="left"> 
         <div class="cycle-slideshow" 
             data-cycle-fx=scrollHorz
