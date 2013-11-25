@@ -19,6 +19,7 @@ regions[sidebar_second] = Second sidebar
 regions[footer] = Footer
 regions[page_bottom] = Page bottom
 regions[absolute_right] = Absolute Right
+regions[absolute_left] = Absolute Left
 
 features[] = logo
 features[] = name

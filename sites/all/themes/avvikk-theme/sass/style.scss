@@ -98,6 +98,9 @@ body{
 #main{
 	padding-top: 120px;
 }
+#content{
+  margin-bottom: 100px;
+}
 div.error{
     background-color: rgba(0, 0, 0, 0);
     border: medium none;
@@ -243,7 +246,54 @@ div.error{
     }
   }
 }
-  
+
+/*BACK BUTTON*/
+#absolute_left{
+    left: 24px;
+    position: fixed;
+    top: 50%;
+
+    a{
+      background: url("../../images/ui/back_pfeil.png") no-repeat scroll 0 21px rgba(0, 0, 0, 0);
+      display: inline-block;
+      margin-top: 20px;
+      padding-bottom: 10px;
+      font-size: 21px;
+    }
+}
+
+/*PRESS PAGE*/
+.page-press{
+  background-color: #FDFE57;
+  #header, #absolute_right{
+    color: #E9E948;
+    li a.active, a, a:hover, a:active, a:visited{
+      color: #E9E948;
+    }
+  }
+  #footer{
+    display: none;
+  }
+  .views-row{
+    margin-bottom: 20px;
+    .views-field-created{
+      font-size: 21px;
+    }
+    .views-field-body{
+      font-size: 11px;
+      width: 580px; 
+      h1, h2, h3, h4, h5{
+        font-size: 21px;
+        line-height: 23px;
+        padding: 0;
+      }
+      img{
+        max-width: 580px;
+      }
+    }
+  }
+
+}
 
 /* SHOP PAGES */
 .page-shop-men, .page-shop-women{

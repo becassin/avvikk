@@ -101,4 +101,9 @@
     <?php print render($page['absolute_right']); ?>
   </div>
 <?php endif; ?>
+  <?php if ($page['absolute_left']): ?>
+  <div id="absolute_left">
+    <?php print render($page['absolute_left']); ?>
+  </div>
+<?php endif; ?>
 </div> <!-- /page -->
