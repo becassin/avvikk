@@ -1,4 +1,4 @@
-<div id="page" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<div id="page" class="collection_page <?php print $classes; ?>"<?php print $attributes; ?>>
 <!-- ______________________ HEADER _______________________ -->
   <header id="header">
     <?php if ($logo && false): ?>
@@ -68,18 +68,13 @@
         <?php endif; ?>
         <div id="content-area">
 
-          <div class="home_overlay">
-            <img src="<?php global $base_url; echo($base_url) ?>/<?php echo path_to_theme() ?>/images/homepage/logo_main.png"/>
-            <h2 class="location">Oslo &#8212; Berlin</h2>
-          </div>
-
           <?php 
-            echo theme('image_style', array('style_name' => 'width_384', 'path' => "public://collections/ss13/Avvikk_0084.jpg"));
-            echo theme('image_style', array('style_name' => 'width_384', 'path' => "public://collections/ss13/Avvikk_1702.jpg"));
-            echo theme('image_style', array('style_name' => 'width_768', 'path' => "public://collections/ss13/Avvikk_0323.jpg"));
-          ?><br><?php
-            echo theme('image_style', array('style_name' => 'width_192', 'path' => "public://collections/ss13/Avvikk_0559.jpg"));
-            echo theme('image_style', array('style_name' => 'width_768', 'path' => "public://collections/ss13/Avvikk_0412.jpg"));
+            echo theme('image_style', array('style_name' => 'width_384', 'path' => "public://collections/aw13/AVVIKK_AW136.jpg"));
+            echo theme('image_style', array('style_name' => 'width_576', 'path' => "public://collections/aw13/AVVIKK_AW142.jpg"));
+            echo theme('image_style', array('style_name' => 'width_600', 'path' => "public://collections/aw13/AVVIKK_AW14.jpg"));
+            echo theme('image_style', array('style_name' => 'width_600', 'path' => "public://collections/aw13/AVVIKK_AW140.jpg"));
+            echo theme('image_style', array('style_name' => 'width_576', 'path' => "public://collections/aw13/AVVIKK_AW135.jpg"));
+            echo theme('image_style', array('style_name' => 'width_384', 'path' => "public://collections/aw13/AVVIKK_AW134.jpg"));
           ?>
             <div class="fullscreen_container">
               <span class="fullscreen" role="img" aria-label="Avvikk SS13 Collection">
@@ -88,20 +83,12 @@
               </span>
             </div>
           <?php            
-            echo theme('image_style', array('style_name' => 'width_304', 'path' => "public://collections/ss13/Avvikk_0358.jpg"));
-            echo theme('image_style', array('style_name' => 'width_304', 'path' => "public://collections/ss13/Avvikk_0358.jpg"));
-            echo theme('image_style', array('style_name' => 'width_304', 'path' => "public://collections/ss13/Avvikk_0358.jpg"));
-            echo theme('image_style', array('style_name' => 'width_768', 'path' => "public://collections/ss13/Avvikk_0394.jpg"));
-            echo theme('image_style', array('style_name' => 'width_960', 'path' => "public://collections/ss13/Avvikk_1616.jpg"));
-            echo theme('image_style', array('style_name' => 'width_576', 'path' => "public://collections/ss13/Avvikk_0537.jpg"));
-            echo theme('image_style', array('style_name' => 'width_304', 'path' => "public://collections/ss13/Avvikk_1673.jpg"));
-            echo theme('image_style', array('style_name' => 'width_768', 'path' => "public://collections/ss13/Avvikk_1659.jpg"));
-
+            echo theme('image_style', array('style_name' => 'width_384', 'path' => "public://collections/aw13/AVVIKK_AW137.jpg"));
+            echo theme('image_style', array('style_name' => 'width_384', 'path' => "public://collections/aw13/AVVIKK_AW133.jpg"));
+            echo theme('image_style', array('style_name' => 'width_600', 'path' => "public://collections/aw13/AVVIKK_AW132.jpg"));
+            echo theme('image_style', array('style_name' => 'width_600', 'path' => "public://collections/aw13/AVVIKK_AW139.jpg"));
           ?>
           
-
-          
-
 
         </div>
         <?php print $feed_icons; ?>
