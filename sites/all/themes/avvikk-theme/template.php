@@ -291,3 +291,15 @@ function avvikk_theme_form_required_marker($variables) {
   );
   return '<span' . drupal_attributes($attributes) . '>*</span>';
 }
+
+function avvikk_theme_select($variables) {
+  $element = $variables['element'];
+  element_set_attributes($element, array('id', 'name', 'size'));
+  _form_set_class($element, array('form-select'));
+  $result = '<select' . drupal_attributes($element['#attributes']) . '>' . form_select_options($element) . '</select>';
+  if(strpos($element['#attributes']["id"], "customer-profile-shipping-commerce-customer-address-und-0-country")){
+    return '<label class="custom-select">'.$result.'</label><p>';
+  } else {
+    return $result;
+  }
+}
