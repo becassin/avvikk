@@ -14,9 +14,9 @@
     <div class="content">
       <div class="left"> 
         <div class="cycle-slideshow" 
-            data-cycle-fx=scrollHorz
+            data-cycle-fx="tileBlind"
             data-cycle-timeout=0
-            data-cycle-pager-event="mouseover"
+    data-cycle-tile-count=1
             data-cycle-pager="#custom-pager"
             data-cycle-pager-template="<a href=#> {{slideNum}} </a>"
             > 

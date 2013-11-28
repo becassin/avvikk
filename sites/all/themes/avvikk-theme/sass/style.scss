@@ -192,14 +192,14 @@ div.error{
   #block-system-main-menu{
   	width:100%;
   	li{
-      font-size: $sub_menu_font_size;
+      @extend .normal_font_style;
       &:nth-child(1){
-    margin-right: 16%;
-    width: 17%;
+        margin-right: 16%;
+        width: 17%;
       }
       &:nth-child(2){
-    margin: 0 12.5%;
-    width: 8%;
+        margin: 0 12.5%;
+        width: 8%;
       }
       &:nth-child(3){
         margin-left: 28%;
@@ -263,7 +263,7 @@ div.error{
     text-align: center;
     .line-item-quantity{
       float: none;
-      font-size: $sub_menu_font_size;
+      @extend .normal_font_style;
     }
     .links li.last{
       padding: 0;

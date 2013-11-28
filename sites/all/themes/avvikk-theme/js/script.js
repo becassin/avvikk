@@ -29,14 +29,14 @@
   };
   
   $(document).ready(function(){
-    $('#block-system-main-menu li.expanded').addClass('ajax_click');
+/*    $('#block-system-main-menu li.expanded').addClass('ajax_click');
     $('.ajax_click').click(function(){
       if(!$(this).hasClass('clicked')){
         $('#block-system-main-menu li.expanded.clicked').removeClass('clicked');
       }
       $(this).toggleClass('clicked');
-    });
-    $('.gallery').addClass('check').cycle();
+    });*/
+    $('.gallery').cycle();
   });
   
 })(jQuery);
