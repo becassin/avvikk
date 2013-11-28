@@ -1,8 +1,8 @@
 .centered_content { 
-	width: 540px; 
+	width: 100%; 
 }
 .centered_content_1200 { 
-	width: 540px; 
+	width: 100%; 
 }
 #absolute_right { 
 	bottom: 0; left: 50%; top: auto; right: auto; 
@@ -29,4 +29,23 @@
 }
 img{
 	max-width: 100%;
+}
+
+/*FRONTPAGE*/
+body.front{
+  .home_overlay{
+    width: 100%;
+    .home_overlay_inner{
+      margin: 25px auto;
+      width: 80%;
+    }
+  }
+}
+
+#main{
+	padding-top: 60px;
+}
+
+#footer{
+	display: none;
 }

@@ -29,7 +29,7 @@
  */
 ?>
 <?php if ($content): ?>
-  <div class="<?php print $classes; ?> centered_content_1200">
+  <div class="<?php print $classes; ?>">
     <?php print $content; ?>
   </div>
 <?php endif; ?>
