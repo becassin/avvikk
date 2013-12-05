@@ -35,6 +35,13 @@ function avvikk_custom_form_commerce_cart_add_to_cart_form_alter(&$form, &$form_
   }
 }
 
+function avvikk_custom_commerce_checkout_page_info_alter(&$pages) {
+  //dpm(array("PAGES" => $pages));
+  if(!empty($pages['review'])) {
+    $pages['review']['submit_value'] = t('Order now');
+  }
+}
+
 
 function avvikk_custom_init(){
   if( strpos($_SERVER['REQUEST_URI'], 'product/men') ){
