@@ -71,7 +71,7 @@
           <div class="home_overlay">
             <div class="home_overlay_inner">
               <img src="<?php global $base_url; echo($base_url) ?>/<?php echo path_to_theme() ?>/images/homepage/logo_main.png"/>
-              <h2 class="location">Oslo &#8212; Berlin</h2>
+              <h2 class="location">Autumn Winter 13</h2>
             </div>
           </div>
 

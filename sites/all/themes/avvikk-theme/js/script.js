@@ -35,8 +35,8 @@
         $('#block-system-main-menu li.expanded.clicked').removeClass('clicked');
       }
       $(this).toggleClass('clicked');
-    });*/
-    $('.gallery').cycle();
+    });
+    $('.gallery').cycle();*/
   });
   
 })(jQuery);

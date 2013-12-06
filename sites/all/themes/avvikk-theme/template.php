@@ -298,7 +298,7 @@ function avvikk_theme_select($variables) {
   _form_set_class($element, array('form-select'));
   $result = '<select' . drupal_attributes($element['#attributes']) . '>' . form_select_options($element) . '</select>';
   if(strpos($element['#attributes']["id"], "customer-profile-shipping-commerce-customer-address-und-0-country")){
-    return '<label class="custom-select">'.$result.'</label><p>';
+    return '<div class="styled-select">'.$result.'</div><p>';
   } else {
     return $result;
   }

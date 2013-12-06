@@ -13,7 +13,12 @@
     </header>
     <div class="content">
       <div class="left"> 
-        <div class="pics" 
+        <div class="cycle-slideshow" 
+            data-cycle-fx="tileBlind"
+            data-cycle-timeout=0
+    data-cycle-tile-count=1
+            data-cycle-pager="#custom-pager"
+            data-cycle-pager-template="<a href=#> {{slideNum}} </a>"
             > 
           <?php 
             foreach($content["field_images"]["#object"]->field_images["und"] as $k=>$v){
@@ -21,24 +26,18 @@
             }
           ?>
         </div>
+        <div id="custom-pager" class="center"></div>        
+        
+        <div class="description"><?php print render($content["field_description"]); ?></div>
       </div>
       <div class="right">
-        <div class="right_inner">
-          <div class="first_column column">
-            <h2><?php print render($content["field_images"]["#object"]->title); ?></h2>
-            <div class="h2"><?php print render($content["product:commerce_price"]); ?></div>
-            <?php
-              $block = module_invoke('commerce_multicurrency', 'block_view', 'currency_menu');
-              print $block['content']; 
-            ?>
-          </div>
-          <div class="second_column column">
-            <div class="description"><?php print render($content["field_description"]); ?></div>
-          </div>
-          <div class="third_column column">
-            <?php print render($content["field_product_reference"]); ?>
-          </div>
-        </div>
+        <h2><?php print render($content["field_images"]["#object"]->title); ?></h2>
+        <div class="h2"><?php print render($content["product:commerce_price"]); ?></div>
+        <?php
+          $block = module_invoke('commerce_multicurrency', 'block_view', 'currency_menu');
+          print $block['content']; ?>
+        <?php print render($content["field_product_reference"]); ?>
+
       </div>
       <br class="clear-flow" style="clear:both">
     </div>
