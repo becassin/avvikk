@@ -37,7 +37,17 @@
           </div>
           <div class="third_column column">
             <?php print render($content["field_product_reference"]); ?>
+            <div class="size_infos">
+              <?php 
+                $options = array('absolute' => TRUE);
+                $nid = 14; // Node ID
+                $url = url('node/' . $nid, $options);
+                
+              ?>
+              <a href="<?php echo $url; ?>" title="Size infos">Size info</a>
+            </div>
           </div>
+
         </div>
       </div>
       <br class="clear-flow" style="clear:both">

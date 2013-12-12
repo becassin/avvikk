@@ -121,7 +121,7 @@ h2, .h2{
   background: transparent;
 }
 .ajax-progress, .checkout-processing{
-  display: none;
+  display: none !important;
 }
 
 
@@ -450,6 +450,13 @@ div.error{
             &.third_column{
               width: 142px;
               float: right;
+              .size_infos{
+                margin-bottom: 12px;
+                a{
+                  @extend .underline_normal;
+                  color: grey;
+                }
+              }
             }
           }
           .h2{
@@ -459,16 +466,25 @@ div.error{
             display: inline-block;
             a{
               color: transparent;
-              width: 20px;
-              height: 11px;
+              width: 27px;
+              height: 16px;
               display: block;
-              margin-right: 10px;
+              margin-right: 6px;
             }
             &.DKK a{
               background: url(../../images/flags/denmark.png);
             }
             &.EUR a{
               background: url(../../images/flags/europe.png);
+            }
+            &.NOK a{
+              background: url(../../images/flags/norway.png);
+            }
+            &.SEK a{
+              background: url(../../images/flags/sweden.png);
+            }
+            &:hover{
+              border: none;
             }
           }
           .field-type-commerce-product-reference{
@@ -496,8 +512,9 @@ div.error{
                     text-decoration: underline;
                   }
                   span.sold_out+label{
-                    color: grey;
+                    border-bottom: 1px solid;
                     cursor: default;
+                    line-height: 0;
                   }  
                 }            
             }
@@ -775,7 +792,8 @@ body.front{
   input[type="text"]{
     width: 438px;
     font-family: 'grotesque_mt_stdregular';
-    &#edit-customer-profile-shipping-commerce-customer-address-und-0-locality{
+    &#edit-customer-profile-shipping-commerce-customer-address-und-0-locality,
+    &#edit-customer-profile-billing-commerce-customer-address-und-0-locality{
       width: 334px; 
     }
   }
@@ -787,7 +805,8 @@ body.front{
   }
   .form-item, .form-actions{
     margin: 10px 0 0;
-    &.form-item-customer-profile-shipping-commerce-customer-address-und-0-postal-code{
+    &.form-item-customer-profile-shipping-commerce-customer-address-und-0-postal-code,
+    &.form-item-customer-profile-billing-commerce-customer-address-und-0-postal-code{
       margin-right: 14px;
     }
   }
@@ -825,7 +844,8 @@ body.front{
   input[type="text"]{
     border: 1px solid;
     padding: 2px;
-    &#edit-customer-profile-shipping-commerce-customer-address-und-0-postal-code{
+    &#edit-customer-profile-shipping-commerce-customer-address-und-0-postal-code,
+    &#edit-customer-profile-billing-commerce-customer-address-und-0-postal-code{
       width: 90px;
     }
   }
@@ -1017,9 +1037,14 @@ body.front{
     @extend .bueditor_body;
   }
 }
-.page-node-5 {
+.page-node-6 {
   .field-name-body{
     padding-left: 437px;
+  }
+}
+.page-node-5 {
+  .field-name-body{
+    padding-right: 437px;
   }
 }
 .page-node-6, .page-press {
@@ -1061,8 +1086,58 @@ body.front{
       }
     }
   }
-
 }
+
+/*SIZE INFOS*/
+.page-node-14{
+  table{
+    border: 1px solid;
+    tr{
+
+    }
+    td{
+      border: 1px solid black; 
+      text-align: center;
+      padding: 14px 0;
+    }
+    th{
+      border: none;
+      text-align: center;
+      font-weight: normal;
+    }
+    .first_header{
+      th{
+        padding: 20px 0;
+        border-top: 1px solid;
+        border-right: 1px solid;
+        @extend .big_font_style;
+      }
+    }
+    .second_header{
+      th{
+        padding: 0 0 10px;
+        width: 12.5%;
+        &:nth-child(2n){
+          border-right: 1px solid;
+
+        }
+      }
+    }
+  }
+  .size_note{
+    @extend .big_font_style;
+    margin-top: 19px;
+    p{
+      margin-top: 8px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
+
 
 @media only screen and (max-device-width: 480px) {
   @import "mobile";    // Defines styles for mobiles.
