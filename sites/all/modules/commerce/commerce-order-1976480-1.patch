@@ -1,0 +1,30 @@
+diff --git a/modules/order/commerce_order.rules.inc b/modules/order/commerce_order.rules.inc
+index 67221d0..72990fd 100644
+--- a/modules/order/commerce_order.rules.inc
++++ b/modules/order/commerce_order.rules.inc
+@@ -219,6 +219,8 @@ function commerce_order_address_comparison_operator_options_list() {
+     'equals' => t('equals'),
+     'begins with' => t('begins with'),
+     'contains' => t('contains'),
++    'is one of' => t('is one of'),
++    'begins with one of' => t('begins with one of'),
+   );
+ }
+ 
+@@ -244,6 +246,16 @@ function commerce_order_rules_compare_address($order, $address_field, $component
+           return strpos($address[$component], $value) === 0;
+         case 'contains':
+           return strpos($address[$component], $value) !== FALSE;
++        case 'is one of':
++          $list = preg_split('/[\n\r]+/', $value);
++          return array_search($address[$component], $list) !== FALSE;
++        case 'begins with one of':
++          $list = preg_split('/[\n\r]+/', $value);
++          foreach ($list as $item) {
++            if(stripos($address[$component], $item) !== FALSE) {
++              return true;
++            }
++          }
+       }
+     }
+   }
