@@ -304,10 +304,13 @@ div.error{
     width: 100%;
     background-color: transparent;
     text-align: center;
+    text-align: -webkit-center;
     padding: 0;
     a{
-      position: absolute;
-      top: -40px;
+      position: relative;
+      margin: -40px auto 0;
+      display: block;
+      width: 30px;
     }
     a:hover{
       border: none;
