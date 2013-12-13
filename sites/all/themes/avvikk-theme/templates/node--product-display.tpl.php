@@ -44,7 +44,7 @@
                 $url = url('node/' . $nid, $options);
                 
               ?>
-              <a href="<?php echo $url; ?>" title="Size infos">Size info</a>
+              <a href="<?php echo $url; ?>" title="Size infos"></a>
             </div>
           </div>
 
