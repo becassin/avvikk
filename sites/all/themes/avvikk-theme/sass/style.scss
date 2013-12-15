@@ -134,6 +134,8 @@ input[type="checkbox"] + label,
 input[type="checkbox"] + div + label{
   padding-left: 28px;
   background: url("../../images/ui/checkbox.png") no-repeat scroll 0 -30px rgba(0, 0, 0, 0);
+  min-height: 18px; 
+  display: inline-block;
 }
 input[type="checkbox"]:checked + label, 
 input[type="checkbox"][disabled]:checked + div + label{
@@ -325,6 +327,7 @@ div.error{
   position: fixed;
   right: 28px;
   top: 50%;
+  width: 0;
   @extend .normal_font_style;
 	-moz-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
 	-webkit-transform: scale(1) rotate(90deg) translateX(0px) translateY(0px) skewX(0deg) skewY(0deg);
@@ -339,6 +342,7 @@ div.error{
     width: 412px;
     margin-left: -200px;
     text-align: center;
+    text-align: -webkit-center;
     li{
       display: inline-block;
       margin: 0 20px;
@@ -434,12 +438,14 @@ div.error{
           padding-top: 120px;
           padding-bottom: 216px;
           height: 100%;
+          min-height: 668px;
           @extend .centered_content;
           text-align: center;
           img{
             max-height: 100%;
             min-height: 300px;
-            margin-bottom: 23%
+            display: block;
+            margin: 0 auto;
           }
         }
       }
@@ -760,8 +766,13 @@ body.front{
       .entity-commerce-product{
         .content{
           margin-top: 7px;
+          .field-name-commerce-price-nok,
+          .field-name-commerce-price-sek{
+            display: none;
+          }
         }
       }
+
     }
     h2, &{
       @extend .normal_font_style;
@@ -781,6 +792,12 @@ body.front{
         &[type="text"]{
           width: 11px;
         }
+      }
+    }
+    .views-field-commerce-product a{
+      cursor: default;
+      &:hover{
+        border: none;
       }
     }
   }
@@ -840,10 +857,16 @@ body.front{
   }
   .form-item, .form-actions{
     margin: 10px 0 0;
+    display: inline-block;
     &.form-item-customer-profile-shipping-commerce-customer-address-und-0-postal-code,
     &.form-item-customer-profile-billing-commerce-customer-address-und-0-postal-code,
     &.postal-code{
       margin-right: 14px;
+    }
+    &.form-type-select{
+      p{
+        margin: 0;
+      }
     }
   }
   label{
@@ -854,6 +877,9 @@ body.front{
       font-style: normal;
     }
   }
+  .field-type-addressfield{
+    padding-right: 130px;
+  }
   #edit-customer-profile-billing{
   }
   #edit-buttons{
@@ -863,13 +889,19 @@ body.front{
       @extend .big_button;
       float: left;
       &#edit-cancel, &#edit-back{
-        display: inline-block;
+/*        display: inline-block;
         float: left;
         @extend .normal_font_style;
         height: 30px;
         margin-left: 60px;
         margin-top: 20px;
-        width: 100px; 
+        width: 100px; */
+        @extend #absolute_left;
+        background: url("../../images/ui/back_pfeil.png") no-repeat scroll 19px 25px #FFFFFF;
+        border: medium none;
+        height: auto;
+        margin: 13px 0 0;
+        padding: 0 0 10px;
       }
     }
     .button-operator{
@@ -976,6 +1008,8 @@ body.front{
           width: 73px;
           padding-right: 0;
           text-align: left;
+          width: 89px;
+          width: 97px;
         }
       } 
       tr.even td, tr.odd td{
@@ -1002,12 +1036,14 @@ body.front{
         }
       }
       td.component-title{
-        padding-left: 546px !important;
+        padding-left: 529px !important;
         @extend .big_font_style;
       }
       td.component-total{
         text-align: left;
         width: 136px;
+        width: 156px;
+        width: 170px;
       }
     }
   }
@@ -1025,6 +1061,51 @@ body.front{
   #edit-continue{
     width: 175px;
     padding: 0;
+  }
+  #edit-extra-pane-node-15{
+    float: right;
+    margin-bottom: 0;
+    position: relative;
+    legend{
+      border: medium none;
+      display: inline-block;
+      width: auto;
+      @extend .normal_font_style;
+      float: left;
+      a{
+        @extend .underline_normal;
+      }
+      span{
+        display: block;
+        width: 475px;
+      }
+    }
+    .fieldset-wrapper{
+      display: inline-block;
+      float: left;
+      .form-type-checkbox{
+        margin: 0;
+        margin-left: 10px;
+      }
+      label{
+        height: 20px;
+        padding-left: 20px;
+        overflow: hidden;
+        width: 0;
+      }
+      article{
+        display: none;
+      }  
+      .messages.error{
+        position: absolute;
+        top: -34px;
+        left: 0;
+        width: 100%;
+      }    
+    }
+  }
+  #edit-commerce-payment-payment-method{
+    display: none;
   }
 }
 

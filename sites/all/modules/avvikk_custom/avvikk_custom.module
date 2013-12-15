@@ -51,6 +51,29 @@ function avvikk_custom_init(){
   }
 }
 
+function avvikk_custom_form_alter(&$form, &$form_state, $form_id) {
+  switch($form["#id"]){
+    case "commerce-checkout-form-review":
+      $options = array('absolute' => TRUE);
+      $nid = 15; // Node ID
+      $t_c_url = url('node/' . $nid, $options);
+      $nid = 43; // Node ID
+      $pri_url = url('node/' . $nid, $options);
+/*      var_dump($form["commerce_payment"]["#prefix"]);
+      exit;*/
+      $form["commerce_payment"]["#suffix"] = "As for now, paypal is the only payment option.";
+      $form['extra_pane__node__15']["#title"] = "I have read and accept the <a target='_blank' href='".$t_c_url."'>terms and conditions</a> and the <a target='_blank' href='".$pri_url."'>privacy policy</a>";
+    break;
+  }
 
+  if (isset($form['type']) && $form['type']['#value'] . '_node_settings' == $form_id) {
+    $form['workflow']['upload_' . $form['type']['#value']] = array(
+      '#type' => 'radios',
+      '#title' => t('Attachments'),
+      '#default_value' => variable_get('upload_' . $form['type']['#value'], 1),
+      '#options' => array(t('Disabled'), t('Enabled')),
+    );
+  }
+}
 
 ?>
