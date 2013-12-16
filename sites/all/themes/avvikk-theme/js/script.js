@@ -31,22 +31,33 @@
   var calculateProductPictureMargins = function(){
     var window_height = $(window).height();
     var padding_top = parseInt($(".node-type-product-display #main .content article .left .pics").css("padding-top"));
-    var img_height = $(".node-type-product-display #main .content article .left .pics img").first().height();
-    var footer_size = 207;
+    var first_img_height = $(".node-type-product-display #main .content article .left .pics img").first().height();
+    var second_img_height = $(".node-type-product-display #main .content article .left .pics img").last().height();
+    var footer_size = 191;
+    var header_size = 75;
 
-    /*CALCULATE BOTTOM MARGIN*/
-    var img_margin_bottom = window_height - padding_top - img_height;
+    /* CALCULATE TOP MARGIN OF FIRST PIC */
+    var img_margin_top = window_height - padding_top - footer_size - first_img_height;
+    img_margin_top = img_margin_top / 2;
+    if(img_margin_top > 0){
+      $(".node-type-product-display #main .content article .left .pics img").first().css("margin-top",img_margin_top+"px");
+    } else {
+    }    
+    /* CALCULATE BOTTOM MARGIN OF FIRST PIC */
+    var img_margin_bottom = window_height - padding_top - first_img_height;
     if(img_margin_bottom > 0){
       $(".node-type-product-display #main .content article .left .pics img").css("margin-bottom",img_margin_bottom+"px");
     } else {
     }
 
-    /*CALCULATE BOTTOM MARGIN OF LAST PIC*/
-    $(".node-type-product-display #main .content article .left .pics img").last().css("margin-bottom",footer_size+"px");
+    /* CALCULATE BOTTOM MARGIN OF LAST PIC */
+    img_margin_bottom = window_height - header_size - footer_size - second_img_height;
+    img_margin_bottom = img_margin_bottom / 2 + footer_size;
+    $(".node-type-product-display #main .content article .left .pics img").last().css("margin-bottom",img_margin_bottom+"px");
   }
   var movePicture = function(elm){
     var container = $('.left');
-    var timing = 600;
+    var timing = 400;
     if(elm.next().size()){
       container.animate({
           scrollTop: elm.next().offset().top

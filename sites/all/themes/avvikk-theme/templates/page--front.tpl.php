@@ -76,34 +76,37 @@
           </div>
 
           <?php 
-            echo theme('image_style', array('style_name' => 'width_384', 'path' => "public://collections/ss13/Avvikk_0084.jpg"));
-            echo theme('image_style', array('style_name' => 'width_384', 'path' => "public://collections/ss13/Avvikk_1702.jpg"));
-            echo theme('image_style', array('style_name' => 'width_768', 'path' => "public://collections/ss13/Avvikk_0323.jpg"));
-          ?><br><?php
-            echo theme('image_style', array('style_name' => 'width_192', 'path' => "public://collections/ss13/Avvikk_0559.jpg"));
-            echo theme('image_style', array('style_name' => 'width_768', 'path' => "public://collections/ss13/Avvikk_0412.jpg"));
+            echo theme('image_style', array('style_name' => 'width_960', 'path' => "public://collections/home/home_1.jpg"));
+
           ?>
             <div class="fullscreen_container">
-              <span class="fullscreen" role="img" aria-label="Avvikk SS13 Collection">
+              <span class="fullscreen home_2" role="img" aria-label="Avvikk SS13 Collection">
                 <span class="fullscreen_inner">
                 </span>
               </span>
             </div>
-          <?php            
-            echo theme('image_style', array('style_name' => 'width_304', 'path' => "public://collections/ss13/Avvikk_0358.jpg"));
-            echo theme('image_style', array('style_name' => 'width_304', 'path' => "public://collections/ss13/Avvikk_0358.jpg"));
-            echo theme('image_style', array('style_name' => 'width_304', 'path' => "public://collections/ss13/Avvikk_0358.jpg"));
-            echo theme('image_style', array('style_name' => 'width_768', 'path' => "public://collections/ss13/Avvikk_0394.jpg"));
-            echo theme('image_style', array('style_name' => 'width_960', 'path' => "public://collections/ss13/Avvikk_1616.jpg"));
-            echo theme('image_style', array('style_name' => 'width_576', 'path' => "public://collections/ss13/Avvikk_0537.jpg"));
-            echo theme('image_style', array('style_name' => 'width_304', 'path' => "public://collections/ss13/Avvikk_1673.jpg"));
-            echo theme('image_style', array('style_name' => 'width_768', 'path' => "public://collections/ss13/Avvikk_1659.jpg"));
-
+          <?php  
+            echo theme('image_style', array('style_name' => 'width_960', 'path' => "public://collections/home/home_3.jpg"));
           ?>
-          
-
-          
-
+            <div class="fullscreen_container">
+              <span class="fullscreen home_4" role="img" aria-label="Avvikk SS13 Collection">
+                <span class="fullscreen_inner">
+                </span>
+              </span>
+            </div>
+          <?php  
+            echo theme('image_style', array('style_name' => 'width_960', 'path' => "public://collections/home/home_5.jpg"));
+          ?>
+            <div class="fullscreen_container">
+              <span class="fullscreen home_6" role="img" aria-label="Avvikk SS13 Collection">
+                <span class="fullscreen_inner">
+                </span>
+              </span>
+            </div>
+          <?php  
+            echo theme('image_style', array('style_name' => 'width_960', 'path' => "public://collections/home/home_7.jpg"));
+            echo theme('image_style', array('style_name' => 'width_960', 'path' => "public://collections/home/home_8.jpg"));
+          ?>
 
         </div>
         <?php print $feed_icons; ?>

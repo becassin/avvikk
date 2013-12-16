@@ -69,24 +69,23 @@
         <div id="content-area">
 
           <?php 
-            echo theme('image_style', array('style_name' => 'width_384', 'path' => "public://collections/aw13/AVVIKK_AW136.jpg"));
-            echo theme('image_style', array('style_name' => 'width_576', 'path' => "public://collections/aw13/AVVIKK_AW142.jpg"));
-            echo theme('image_style', array('style_name' => 'width_600', 'path' => "public://collections/aw13/AVVIKK_AW14.jpg"));
-            echo theme('image_style', array('style_name' => 'width_600', 'path' => "public://collections/aw13/AVVIKK_AW140.jpg"));
-            echo theme('image_style', array('style_name' => 'width_576', 'path' => "public://collections/aw13/AVVIKK_AW135.jpg"));
-            echo theme('image_style', array('style_name' => 'width_384', 'path' => "public://collections/aw13/AVVIKK_AW134.jpg"));
-          ?>
-            <div class="fullscreen_container">
-              <span class="fullscreen" role="img" aria-label="Avvikk SS13 Collection">
-                <span class="fullscreen_inner">
-                </span>
-              </span>
-            </div>
-          <?php            
-            echo theme('image_style', array('style_name' => 'width_384', 'path' => "public://collections/aw13/AVVIKK_AW137.jpg"));
-            echo theme('image_style', array('style_name' => 'width_384', 'path' => "public://collections/aw13/AVVIKK_AW133.jpg"));
-            echo theme('image_style', array('style_name' => 'width_600', 'path' => "public://collections/aw13/AVVIKK_AW132.jpg"));
-            echo theme('image_style', array('style_name' => 'width_600', 'path' => "public://collections/aw13/AVVIKK_AW139.jpg"));
+            echo theme('image_style', array('style_name' => 'width_528', 'path' => "public://collections/aw13/shoe_aw_1.jpg"));
+            echo theme('image_style', array('style_name' => 'width_528', 'path' => "public://collections/aw13/shoe_aw_2.jpg"));
+            echo "<br>";
+            echo theme('image_style', array('style_name' => 'width_746', 'path' => "public://collections/aw13/shoe_aw_3.jpg"));
+            echo "<br>";
+            echo theme('image_style', array('style_name' => 'width_528', 'path' => "public://collections/aw13/shoe_aw_4.jpg"));
+            echo theme('image_style', array('style_name' => 'width_528', 'path' => "public://collections/aw13/shoe_aw_5.jpg"));
+            echo "<br>";
+            echo theme('image_style', array('style_name' => 'width_746', 'path' => "public://collections/aw13/shoe_aw_6.jpg"));       
+            echo "<br>";
+            echo theme('image_style', array('style_name' => 'width_528', 'path' => "public://collections/aw13/shoe_aw_7.jpg"));       
+            echo theme('image_style', array('style_name' => 'width_528', 'path' => "public://collections/aw13/shoe_aw_8.jpg"));
+            echo "<br>";
+            echo theme('image_style', array('style_name' => 'width_746', 'path' => "public://collections/aw13/shoe_aw_9.jpg"));
+            echo "<br>";
+            echo theme('image_style', array('style_name' => 'width_528', 'path' => "public://collections/aw13/shoe_aw_10.jpg"));
+            echo theme('image_style', array('style_name' => 'width_528', 'path' => "public://collections/aw13/shoe_aw_11.jpg"));
           ?>
           
 
