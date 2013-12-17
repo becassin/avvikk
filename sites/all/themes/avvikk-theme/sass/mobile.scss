@@ -1,3 +1,40 @@
+
+
+/*HIDING STUFF*/
+
+#header .block-views,
+.shop,
+#absolute_left,
+#footer,
+.press{ 
+    display: none !important;
+}
+
+/*OVERRIDE CLASSES*/
+.big_font_style{
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 13px;
+  font-weight: normal;
+}
+.normal_font_style{
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  line-height: 1.2em;
+}
+
+/*BODY ITEMS*/
+html,
+body,
+#page{
+	min-width: 0;
+	width: 100%;
+}
+
+
+
+
+
 .centered_content { 
 	width: 100%; 
 }
@@ -12,12 +49,51 @@
 	-ms-transform: none;
 	transform: none;
 }
-#header .block-views{
-	display: none;
+
+
+
+
+/*TOP MENU*/
+#main{
+	padding-top: 73px; 
 }
-#header #block-system-main-menu li:nth-child(2) {
-    display: none;
+#header{
+	padding: 1rem;
+	min-width: 0;
 }
+#header #block-system-main-menu li:nth-child(1),
+#header #block-system-main-menu li:nth-child(3){
+	width: auto;
+	margin: 0;
+}
+#header #block-system-main-menu ul li ul{
+	width: auto
+}
+.inactive_li, #header #block-system-main-menu ul li.expanded ul li{
+    display: block;
+    height: 13px;
+    opacity: 1;
+}
+
+#header #block-system-main-menu ul li.expanded ul{
+	padding-top: 5px;
+}
+#header #block-system-main-menu li:nth-child(3){
+	float: right;
+	text-align: right;
+}
+.active_li, 
+#header #block-system-main-menu ul li.expanded ul li.active-trail, 
+#header #block-system-main-menu ul li.expanded:hover ul li{
+    height: 13px;
+}
+
+
+
+
+
+
+
 .page-node-4 #main, 
 .page-node-4 #content-area, 
 .page-node-4  #content-inner.center, 
@@ -42,10 +118,7 @@ body.front{
   }
 }
 
-#main{
-	padding-top: 60px;
-}
-
-#footer{
-	display: none;
+/*STATIC PAGES*/
+.page-node-5 .field-name-body{
+	padding: 30px 10px; 
 }

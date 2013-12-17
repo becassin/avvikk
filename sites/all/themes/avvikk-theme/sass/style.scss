@@ -451,15 +451,18 @@ div.error{
           padding-top: 120px;
           padding-bottom: 216px;
           height: 100%;
-          min-height: 668px;
+          min-height: 491px;
           @extend .centered_content;
           text-align: center;
           img{
             max-height: 100%;
-            min-height: 300px;
             display: block;
             margin: 0 auto;
           }
+        }
+        .bottom_padding{
+          width: 100%;
+          min-height: 100px;
         }
       }
       .right{
@@ -495,7 +498,7 @@ div.error{
                 right: -25px;
                 top: 15px;
                 a{
-                  background: url("../../images/ui/info.png") no-repeat scroll 0 0 #FFFFFF;
+                  background: url("../../images/ui/info2.png") no-repeat scroll 0 0 #FFFFFF;
                   background-size: 16px; 
                   display: block;
                   height: 20px;
@@ -547,29 +550,35 @@ div.error{
             }
             .form-item-attributes-field-size{
               .form-item, label{
-                    display: inline-block;
-                    @extend .big_font_style;
-                    font-weight: normal;
+                display: inline-block;
+                @extend .big_font_style;
+                font-weight: normal;
               }
-                .form-type-radio{
-                  margin: 5px 0 0 0;
-                  &:nth-child(3n + 2){
-                    margin-left: 28px;
-                    margin-right: 28px;
-                  }
-                  input[type="radio"]{
-                    display: none;
-                  }
-                  input[type="radio"]:checked+label{
-                    text-decoration: underline;
-                  }
-                  span.sold_out+label{
-                    border-bottom: 1px solid;
-                    cursor: default;
-                    line-height: 0;
-                  }  
-                }            
-            }
+              label{
+                @extend .underline_big_hover;
+              }
+              .form-type-radio{
+                margin: 5px 0 0 0;
+                &:nth-child(3n + 2){
+                  margin-left: 28px;
+                  margin-right: 28px;
+                }
+                input[type="radio"]{
+                  display: none;
+                }
+                input[type="radio"]:checked+label{
+                  //text-decoration: underline; 
+                  @extend .underline_big;
+                }
+                span.sold_out+label{
+/*                    border-bottom: 1px solid;
+                  line-height: 0;*/
+                  border: none;
+                  cursor: default;
+                  text-decoration: line-through;
+                }  
+              }           
+            } 
             input[type="submit"]{
               @extend .big_button;
               left: 383px;
@@ -1263,9 +1272,64 @@ body.front{
 
 
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  
+}
 
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  
+}
 
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  @import "mobile";
+  
+}
 
-@media only screen and (max-device-width: 480px) {
-  @import "mobile";    // Defines styles for mobiles.
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  
 }

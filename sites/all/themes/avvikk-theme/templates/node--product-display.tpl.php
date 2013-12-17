@@ -20,6 +20,7 @@
               echo theme('image_style', array('style_name' => 'product_display', 'path' => $v["uri"]));
             }
           ?>
+          <div class="bottom_padding"></div>
         </div>
       </div>
       <div class="right">
