@@ -1124,6 +1124,9 @@ body.front{
   }
   #edit-commerce-payment{
     margin-top: 40px;
+    .messages.warning{
+      display: none;
+    }
   }
   .paypal_only h2{
     background: url("../../images/ui/checkbox.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -1226,7 +1229,7 @@ body.front{
 
 
 /*STATIC PAGES*/
-.page-node-5, .page-node-6, .page-press, .page-node-20, .page-node-15, .page-node-16 {
+.page-node-5, .page-node-6, .page-press, .page-node-20, .page-node-15, .page-node-16, .page-node-43 {
   .field-name-body, .views-field-body{
     @extend .bueditor_body;
   }
@@ -1236,7 +1239,7 @@ body.front{
     padding-left: 437px;
   }
 }
-.page-node-5 {
+.page-node-5, .page-node-43  {
   .field-name-body{
     padding-right: 437px;
   }

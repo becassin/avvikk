@@ -84,6 +84,9 @@
       }, 1000);
       return false;
     });
+    if($("#edit-extra-pane-node-15 .messages.error").length){
+      $("#edit-extra-pane-node-15 .messages.error").html("Please agree to the terms and conditions.");
+    }
   });
   $(window).load(function () {
     calculateProductPictureMargins();
