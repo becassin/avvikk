@@ -61,7 +61,7 @@ function avvikk_custom_form_alter(&$form, &$form_state, $form_id) {
       $pri_url = url('node/' . $nid, $options);
 /*      var_dump($form["commerce_payment"]["#prefix"]);
       exit;*/
-      $form["commerce_payment"]["#suffix"] = "As for now, paypal is the only payment option.";
+      $form["commerce_payment"]["#suffix"] = "<div class='paypal_only'><h2>Paypal</h2><div>(As for now, paypal is the only payment option)</div></div>";
       $form['extra_pane__node__15']["#title"] = "I have read and accept the <a target='_blank' href='".$t_c_url."'>terms and conditions</a> and the <a target='_blank' href='".$pri_url."'>privacy policy</a>";
     break;
   }
