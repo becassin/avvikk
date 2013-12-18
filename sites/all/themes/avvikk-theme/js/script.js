@@ -89,6 +89,7 @@
     }
   });
   $(window).load(function () {
+    $(".node-type-product-display #main .content article .left .pics img").css("opacity","1");
     calculateProductPictureMargins();
     $( window ).resize(function() {
       calculateProductPictureMargins();

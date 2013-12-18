@@ -469,6 +469,10 @@ div.error{
             max-height: 100%;
             display: block;
             margin: 0 auto;
+            opacity: 0;
+            &:nth-child(1){
+              opacity: 1;
+            }
           }
         }
         .bottom_padding{
@@ -649,40 +653,40 @@ div.error{
       height: 0;
     }
     /* default screen, non-retina */
-    .fullscreen_container .fullscreen { background-image: url(/drupal/sites/default/files/styles/width_1200/public/collections/ss13/Avvikk_1744.jpg); }
-    .fullscreen_container .fullscreen.home_2 { background-image: url(/drupal/sites/default/files/styles/width_1200/public/collections/home/home_2.jpg); }
-    .fullscreen_container .fullscreen.home_4 { background-image: url(/drupal/sites/default/files/styles/width_1200/public/collections/home/home_4.jpg); }
-    .fullscreen_container .fullscreen.home_6 { background-image: url(/drupal/sites/default/files/styles/width_1200/public/collections/home/home_6.jpg); }
+    .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_1200/public/collections/ss13/Avvikk_1744.jpg); }
+    .fullscreen_container .fullscreen.home_2 { background-image: url(/sites/default/files/styles/width_1200/public/collections/home/home_2.jpg); }
+    .fullscreen_container .fullscreen.home_4 { background-image: url(/sites/default/files/styles/width_1200/public/collections/home/home_4.jpg); }
+    .fullscreen_container .fullscreen.home_6 { background-image: url(/sites/default/files/styles/width_1200/public/collections/home/home_6.jpg); }
 
     @media only screen and (max-width: 320px) {
-        .fullscreen_container .fullscreen { background-image: url(/drupal/sites/default/files/styles/width_768/public/collections/ss13/Avvikk_1744.jpg); }
-        .fullscreen_container .fullscreen.home_2 { background-image: url(/drupal/sites/default/files/styles/width_768/public/collections/home/home_2.jpg); }
-        .fullscreen_container .fullscreen.home_4 { background-image: url(/drupal/sites/default/files/styles/width_768/public/collections/home/home_4.jpg); }
-        .fullscreen_container .fullscreen.home_6 { background-image: url(/drupal/sites/default/files/styles/width_768/public/collections/home/home_6.jpg); }
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_768/public/collections/ss13/Avvikk_1744.jpg); }
+        .fullscreen_container .fullscreen.home_2 { background-image: url(/sites/default/files/styles/width_768/public/collections/home/home_2.jpg); }
+        .fullscreen_container .fullscreen.home_4 { background-image: url(/sites/default/files/styles/width_768/public/collections/home/home_4.jpg); }
+        .fullscreen_container .fullscreen.home_6 { background-image: url(/sites/default/files/styles/width_768/public/collections/home/home_6.jpg); }
     }
     @media only screen and (min-width: 321px) and (max-width: 538px) {
-        .fullscreen_container .fullscreen { background-image: url(/drupal/sites/default/files/styles/width_768/public/collections/ss13/Avvikk_1744.jpg); }
-        .fullscreen_container .fullscreen.home_2 { background-image: url(/drupal/sites/default/files/styles/width_768/public/collections/home/home_2.jpg); }
-        .fullscreen_container .fullscreen.home_4 { background-image: url(/drupal/sites/default/files/styles/width_768/public/collections/home/home_4.jpg); }
-        .fullscreen_container .fullscreen.home_6 { background-image: url(/drupal/sites/default/files/styles/width_768/public/collections/home/home_6.jpg); }
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_768/public/collections/ss13/Avvikk_1744.jpg); }
+        .fullscreen_container .fullscreen.home_2 { background-image: url(/sites/default/files/styles/width_768/public/collections/home/home_2.jpg); }
+        .fullscreen_container .fullscreen.home_4 { background-image: url(/sites/default/files/styles/width_768/public/collections/home/home_4.jpg); }
+        .fullscreen_container .fullscreen.home_6 { background-image: url(/sites/default/files/styles/width_768/public/collections/home/home_6.jpg); }
     }
     @media only screen and (min-width: 539px) and (max-width: 1200px) {
-        .fullscreen_container .fullscreen { background-image: url(/drupal/sites/default/files/styles/width_1200/public/collections/ss13/Avvikk_1744.jpg); }
-        .fullscreen_container .fullscreen.home_2 { background-image: url(/drupal/sites/default/files/styles/width_1200/public/collections/home/home_2.jpg); }
-        .fullscreen_container .fullscreen.home_4 { background-image: url(/drupal/sites/default/files/styles/width_1200/public/collections/home/home_4.jpg); }
-        .fullscreen_container .fullscreen.home_6 { background-image: url(/drupal/sites/default/files/styles/width_1200/public/collections/home/home_6.jpg); }
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_1200/public/collections/ss13/Avvikk_1744.jpg); }
+        .fullscreen_container .fullscreen.home_2 { background-image: url(/sites/default/files/styles/width_1200/public/collections/home/home_2.jpg); }
+        .fullscreen_container .fullscreen.home_4 { background-image: url(/sites/default/files/styles/width_1200/public/collections/home/home_4.jpg); }
+        .fullscreen_container .fullscreen.home_6 { background-image: url(/sites/default/files/styles/width_1200/public/collections/home/home_6.jpg); }
     }
     @media only screen and (min-width: 1201px) and (max-width: 2000px) {
-        .fullscreen_container .fullscreen { background-image: url(/drupal/sites/default/files/styles/width_2000/public/collections/ss13/Avvikk_1744.jpg); }
-        .fullscreen_container .fullscreen.home_2 { background-image: url(/drupal/sites/default/files/styles/width_2000/public/collections/home/home_2.jpg); }
-        .fullscreen_container .fullscreen.home_4 { background-image: url(/drupal/sites/default/files/styles/width_2000/public/collections/home/home_4.jpg); }
-        .fullscreen_container .fullscreen.home_6 { background-image: url(/drupal/sites/default/files/styles/width_2000/public/collections/home/home_6.jpg); }
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_2000/public/collections/ss13/Avvikk_1744.jpg); }
+        .fullscreen_container .fullscreen.home_2 { background-image: url(/sites/default/files/styles/width_2000/public/collections/home/home_2.jpg); }
+        .fullscreen_container .fullscreen.home_4 { background-image: url(/sites/default/files/styles/width_2000/public/collections/home/home_4.jpg); }
+        .fullscreen_container .fullscreen.home_6 { background-image: url(/sites/default/files/styles/width_2000/public/collections/home/home_6.jpg); }
     }
     @media only screen and (min-width: 2000px){
-        .fullscreen_container .fullscreen { background-image: url(/drupal/sites/default/files/collections/ss13/Avvikk_1744.jpg); }
-        .fullscreen_container .fullscreen.home_2 { background-image: url(/drupal/sites/default/files/collections/home/home_2.jpg); }
-        .fullscreen_container .fullscreen.home_4 { background-image: url(/drupal/sites/default/files/collections/home/home_4.jpg); }
-        .fullscreen_container .fullscreen.home_6 { background-image: url(/drupal/sites/default/files/collections/home/home_6.jpg); }
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/collections/ss13/Avvikk_1744.jpg); }
+        .fullscreen_container .fullscreen.home_2 { background-image: url(/sites/default/files/collections/home/home_2.jpg); }
+        .fullscreen_container .fullscreen.home_4 { background-image: url(/sites/default/files/collections/home/home_4.jpg); }
+        .fullscreen_container .fullscreen.home_6 { background-image: url(/sites/default/files/collections/home/home_6.jpg); }
     }
   }
 }
@@ -718,27 +722,27 @@ div.error{
       height: 0;
     }
     /* default screen, non-retina */
-    .fullscreen_container .fullscreen { background-image: url(/drupal/sites/default/files/styles/width_1200/public/collections/aw13/AVVIKK_AW138.jpg); }
+    .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_1200/public/collections/aw13/AVVIKK_AW138.jpg); }
 
     @media only screen and (max-width: 320px) {
         /* Small screen, non-retina */
-        .fullscreen_container .fullscreen { background-image: url(/drupal/sites/default/files/styles/width_768/public/collections/aw13/AVVIKK_AW138.jpg); }
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_768/public/collections/aw13/AVVIKK_AW138.jpg); }
     }
     @media only screen and (min-width: 321px) and (max-width: 538px) {
         /* Medium screen, non-retina */
-        .fullscreen_container .fullscreen { background-image: url(/drupal/sites/default/files/styles/width_768/public/collections/aw13/AVVIKK_AW138.jpg); }
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_768/public/collections/aw13/AVVIKK_AW138.jpg); }
     }
     @media only screen and (min-width: 539px) and (max-width: 1200px) {
         /* Normal screen, non-retina */
-        .fullscreen_container .fullscreen { background-image: url(/drupal/sites/default/files/styles/width_1200/public/collections/aw13/AVVIKK_AW138.jpg); }
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_1200/public/collections/aw13/AVVIKK_AW138.jpg); }
     }
     @media only screen and (min-width: 1201px) and (max-width: 2000px) {
         /* Large screen, non-retina */
-        .fullscreen_container .fullscreen { background-image: url(/drupal/sites/default/files/styles/width_2000/public/collections/aw13/AVVIKK_AW138.jpg); }
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/styles/width_2000/public/collections/aw13/AVVIKK_AW138.jpg); }
     }
     @media only screen and (min-width: 2000px){
         /* Larger screen, non-retina */
-        .fullscreen_container .fullscreen { background-image: url(/drupal/sites/default/files/collections/aw13/AVVIKK_AW138.jpg); }
+        .fullscreen_container .fullscreen { background-image: url(/sites/default/files/collections/aw13/AVVIKK_AW138.jpg); }
     }
   }
 }
@@ -1075,10 +1079,10 @@ body.front{
         }
         &:nth-child(2){
           padding-right: 0;
-          width: 300;
+          width: 240px;
         }
         &:nth-child(3){
-          width: 200;
+          width: 200px;
         }
         &:nth-child(4){
           width: 73px;
@@ -1187,6 +1191,7 @@ body.front{
         top: -34px;
         left: 0;
         width: 100%;
+        min-width: 700px;
       }    
     }
   }
