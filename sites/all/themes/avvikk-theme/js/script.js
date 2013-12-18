@@ -85,7 +85,7 @@
       return false;
     });
     if($("#edit-extra-pane-node-15 .messages.error").length){
-      $("#edit-extra-pane-node-15 .messages.error").html("Please agree to the terms and conditions.");
+      $("#edit-extra-pane-node-15 .messages.error").html("Please agree to the terms and conditions, otherwise we cannot process your order.");
     }
   });
   $(window).load(function () {
