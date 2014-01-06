@@ -331,6 +331,9 @@ div.error{
     img{
       width: 30px;
     }
+    .content{
+      height: 0; 
+    }
 }
 
 /*SECONDARY MENU*/
@@ -1117,7 +1120,7 @@ body.front{
         }
       }
       td.component-title{
-        padding-left: 563px !important;
+        padding-left: 579px !important;
         @extend .big_font_style;
       }
       td.component-total{

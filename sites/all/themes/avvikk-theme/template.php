@@ -265,6 +265,7 @@ function avvikk_theme_menu_local_tasks(&$variables) {
 
 /*CUSTOM HOOKS*/
 function avvikk_theme_radio($variables) {
+
   $element = $variables['element'];
   $element['#attributes']['type'] = 'radio';
   element_set_attributes($element, array('id', 'name','#return_value' => 'value'));
