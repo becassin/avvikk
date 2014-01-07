@@ -180,6 +180,14 @@ div.error{
       margin: 0;
     }
 }
+div.warning, div.status {
+    background-color: rgba(0, 0, 0, 0);
+    border: medium none;
+    padding: 0;
+    ul{
+      margin: 0;
+    }
+}
 .inner{
   padding: 0;
 }
