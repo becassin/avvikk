@@ -53,7 +53,9 @@
             <?php if ($title && false): ?>
               <h1 class="title"><?php print $title; ?></h1>
             <?php endif; ?>
+            <?php global $user; if(isset($user->roles[3])) print $messages; ?>
             <?php print $messages; ?>
+            <?php endif; ?>
             <?php print render($page['help']); ?>
             <?php if ($tabs): ?>
               <div class="tabs"><?php print render($tabs); ?></div>
