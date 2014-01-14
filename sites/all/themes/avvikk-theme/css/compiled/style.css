@@ -2629,9 +2629,7 @@ body.front .home_overlay .home_overlay_inner {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-/* Smartphones (landscape) ----------- */
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /*HIDING STUFF*/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\000039}}
   #header .block-views,
@@ -2794,7 +2792,172 @@ body.front .home_overlay .home_overlay_inner {
     padding: 30px 10px;
   }
 }
+/* Smartphones (landscape) ----------- */
+/* Smartphones (portrait) ----------- */
 /* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /*HIDING STUFF*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\000039}}
+  #header .block-views,
+  .shop,
+  #absolute_left,
+  #commerce-checkout-form-checkout #edit-buttons input[type="submit"]#edit-cancel,
+  #commerce-checkout-form-review #edit-buttons input[type="submit"]#edit-cancel,
+  #commerce-checkout-form-checkout #edit-buttons input[type="submit"]#edit-back,
+  #commerce-checkout-form-review #edit-buttons input[type="submit"]#edit-back,
+  #commerce-checkout-form-shipping #edit-buttons input[type="submit"]#edit-cancel,
+  #commerce-checkout-form-shipping #edit-buttons input[type="submit"]#edit-back,
+  #footer,
+  .press {
+    display: none !important;
+  }
+
+  /*OVERRIDE CLASSES*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000314}}
+  .big_font_style, .big_button, .node-type-product-display #main .content article .right .right_inner .field-type-commerce-product-reference input[type="submit"], .view-commerce-cart-form .commerce-line-item-actions input, #commerce-checkout-form-checkout #edit-buttons input[type="submit"], #commerce-checkout-form-review #edit-buttons input[type="submit"], #commerce-checkout-form-shipping #edit-buttons input[type="submit"], h2, .h2, .bueditor_body h1, .page-node-5 .field-name-body h1, .page-node-5 .views-field-body h1, .page-node-6 .field-name-body h1, .page-node-6 .views-field-body h1, .page-press .field-name-body h1, .page-press .views-field-body h1, .page-node-20 .field-name-body h1, .page-node-20 .views-field-body h1, .page-node-15 .field-name-body h1, .page-node-15 .views-field-body h1, .page-node-16 .field-name-body h1, .page-node-16 .views-field-body h1, .page-node-43 .field-name-body h1, .page-node-43 .views-field-body h1, .bueditor_body h2, .page-node-5 .field-name-body h2, .page-node-5 .views-field-body h2, .page-node-6 .field-name-body h2, .page-node-6 .views-field-body h2, .page-press .field-name-body h2, .page-press .views-field-body h2, .page-node-20 .field-name-body h2, .page-node-20 .views-field-body h2, .page-node-15 .field-name-body h2, .page-node-15 .views-field-body h2, .page-node-16 .field-name-body h2, .page-node-16 .views-field-body h2, .page-node-43 .field-name-body h2, .page-node-43 .views-field-body h2, .bueditor_body h3, .page-node-5 .field-name-body h3, .page-node-5 .views-field-body h3, .page-node-6 .field-name-body h3, .page-node-6 .views-field-body h3, .page-press .field-name-body h3, .page-press .views-field-body h3, .page-node-20 .field-name-body h3, .page-node-20 .views-field-body h3, .page-node-15 .field-name-body h3, .page-node-15 .views-field-body h3, .page-node-16 .field-name-body h3, .page-node-16 .views-field-body h3, .page-node-43 .field-name-body h3, .page-node-43 .views-field-body h3, .bueditor_body h4, .page-node-5 .field-name-body h4, .page-node-5 .views-field-body h4, .page-node-6 .field-name-body h4, .page-node-6 .views-field-body h4, .page-press .field-name-body h4, .page-press .views-field-body h4, .page-node-20 .field-name-body h4, .page-node-20 .views-field-body h4, .page-node-15 .field-name-body h4, .page-node-15 .views-field-body h4, .page-node-16 .field-name-body h4, .page-node-16 .views-field-body h4, .page-node-43 .field-name-body h4, .page-node-43 .views-field-body h4, .bueditor_body h5, .page-node-5 .field-name-body h5, .page-node-5 .views-field-body h5, .page-node-6 .field-name-body h5, .page-node-6 .views-field-body h5, .page-press .field-name-body h5, .page-press .views-field-body h5, .page-node-20 .field-name-body h5, .page-node-20 .views-field-body h5, .page-node-15 .field-name-body h5, .page-node-15 .views-field-body h5, .page-node-16 .field-name-body h5, .page-node-16 .views-field-body h5, .page-node-43 .field-name-body h5, .page-node-43 .views-field-body h5, #header .block-views .links, #header #block-system-main-menu ul li .nolink, #absolute_left a, #commerce-checkout-form-checkout #edit-buttons input[type="submit"]#edit-cancel a, #commerce-checkout-form-review #edit-buttons input[type="submit"]#edit-cancel a, #commerce-checkout-form-checkout #edit-buttons input[type="submit"]#edit-back a, #commerce-checkout-form-review #edit-buttons input[type="submit"]#edit-back a, #commerce-checkout-form-shipping #edit-buttons input[type="submit"]#edit-cancel a, #commerce-checkout-form-shipping #edit-buttons input[type="submit"]#edit-back a, .node-type-product-display #main .content article .right .right_inner .field-type-commerce-product-reference .form-item-attributes-field-size .form-item, .node-type-product-display #main .content article .right .right_inner .field-type-commerce-product-reference .form-item-attributes-field-size label, .view-commerce-cart-form .views-table th, .view-commerce-cart-form .views-table h2, .view-commerce-cart-form .views-table, .view-commerce-cart-form .views-table table, .view-commerce-cart-form .views-table .views-field-edit-quantity .form-type-textfield, .view-commerce-cart-form .views-table .delete_container, .view-commerce-cart-form .views-table .views-field-edit-quantity .form-type-textfield input, .view-commerce-cart-form .views-table .delete_container input, .view-commerce-cart-form .line-item-summary, #commerce-checkout-form-checkout legend, #commerce-checkout-form-review legend, #commerce-checkout-form-shipping legend, #commerce-checkout-form-review .pane-data:nth-child(1), #commerce-checkout-form-review .pane-data:nth-child(2), #commerce-checkout-form-review th, #commerce-checkout-form-review tr.pane-title.even td, #commerce-checkout-form-review tr.pane-title.odd td, #commerce-checkout-form-review tr.pane-data.even td table th, #commerce-checkout-form-review tr.pane-data.odd td table th, #commerce-checkout-form-review .commerce-order-handler-area-order-total .commerce-price-formatted-components tr.component-type-commerce-price-formatted-amount .component-total, #commerce-checkout-form-review .commerce-order-handler-area-order-total .commerce-price-formatted-components tr td.component-title, .page-checkout-complete, .page-press .views-row .views-field-created, .page-press .views-row .views-field-body h1, .page-press .views-row .views-field-body h2, .page-press .views-row .views-field-body h3, .page-press .views-row .views-field-body h4, .page-press .views-row .views-field-body h5, .page-node-14 table .first_header th, .page-node-14 .size_note {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 13px;
+    font-weight: normal;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000320}}
+  .normal_font_style, body, #header #block-system-main-menu li, #header .line-item-summary .line-item-quantity, #absolute_right, .page-shop-men #main .content .views-row .views-field-title, .page-shop-women #main .content .views-row .views-field-title, .view-commerce-cart-form, #commerce-checkout-form-checkout label, #commerce-checkout-form-review label, #commerce-checkout-form-shipping label, #commerce-checkout-form-review, #commerce-checkout-form-review #edit-extra-pane-node-15 legend {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 1.2em;
+  }
+
+  /*BODY ITEMS*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000329}}
+  html,
+  body,
+  #page {
+    min-width: 0;
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000338}}
+  .centered_content, #page, #header #header-region, .node-type-product-display #main .content article .left .pics, .node-type-product-display #main .content article .right .right_inner {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000341}}
+  .centered_content_1200 {
+    width: 100%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000344}}
+  #absolute_right {
+    bottom: 0;
+    left: 50%;
+    top: auto;
+    right: auto;
+    -moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  /*TOP MENU*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000357}}
+  #main {
+    padding-top: 73px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000360}}
+  #header {
+    padding: 1rem;
+    min-width: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000365}}
+  #header #block-system-main-menu li:nth-child(1),
+  #header #block-system-main-menu li:nth-child(3) {
+    width: auto;
+    margin: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000369}}
+  #header #block-system-main-menu ul li ul {
+    width: auto;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000372}}
+  .inactive_li, #header #block-system-main-menu ul li.expanded ul li, #header #block-system-main-menu ul li.expanded ul li {
+    display: block;
+    height: 13px;
+    opacity: 1;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000378}}
+  #header #block-system-main-menu ul li.expanded ul {
+    padding-top: 5px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000381}}
+  #header #block-system-main-menu li:nth-child(3) {
+    float: right;
+    text-align: right;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\0000387}}
+  .active_li, #header #block-system-main-menu ul li.expanded ul li.active-trail, #header #block-system-main-menu ul li.expanded:hover ul li,
+  #header #block-system-main-menu ul li.expanded ul li.active-trail,
+  #header #block-system-main-menu ul li.expanded:hover ul li {
+    height: 13px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\00003100}}
+  .page-node-4 #main, .page-node-3 #main, body.front #main,
+  .page-node-4 #content-area,
+  .page-node-3 #content-area,
+  body.front #content-area,
+  .page-node-4 #content-inner.center,
+  .page-node-3 #content-inner.center,
+  body.front #content-inner.center,
+  .page-node-4 #content,
+  .page-node-3 #content,
+  body.front #content {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\00003102}}
+  .page-node-4 #main img, .page-node-3 #main img, body.front #main img,
+  .page-node-4 #content-area img,
+  .page-node-3 #content-area img,
+  body.front #content-area img,
+  .page-node-4 #content-inner.center img,
+  .page-node-3 #content-inner.center img,
+  body.front #content-inner.center img,
+  .page-node-4 #content img,
+  .page-node-3 #content img,
+  body.front #content img {
+    margin: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\00003106}}
+  img {
+    max-width: 100%;
+  }
+
+  /*FRONTPAGE*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\00003112}}
+  body.front .home_overlay {
+    width: 100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\00003114}}
+  body.front .home_overlay .home_overlay_inner {
+    margin: 25px auto;
+    width: 80%;
+  }
+
+  /*STATIC PAGES*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/avvikk\/sites\/all\/themes\/avvikk-theme\/sass\/mobile\.scss}line{font-family:\00003122}}
+  .page-node-5 .field-name-body {
+    padding: 30px 10px;
+  }
+}
 /* iPads (landscape) ----------- */
 /* iPads (portrait) ----------- */
 /* Desktops and laptops ----------- */
