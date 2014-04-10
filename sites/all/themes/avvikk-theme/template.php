@@ -17,6 +17,47 @@ if (theme_get_setting('avvikk_theme_tabs')) {
   drupal_add_css( drupal_get_path('theme', 'avvikk_theme') . '/css/tabs.css');
 }
 
+function doubleCheckShopURL($path_alias, $shop_urls){
+  $match = false;
+  foreach ($shop_urls as $key => $value) {
+    $match = strpos("___".$value, $path_alias);
+    if($match) break;
+    $match = strpos("___".$path_alias, $value);
+    if($match) break;
+    //echo $path_alias.":".$value.":".$match."<br>";
+  }
+  return $match;
+}
+
+function closeShop(){
+    $shop_urls = array(
+        "shop/women",
+        "shop/men",
+        "product/",
+        "cart/",
+        "checkout/",
+        "content/shipping",
+        "content/terms-conditions",
+        "content/return"
+        );
+    $path = current_path();
+    $path_alias = (drupal_lookup_path('alias',$path)) ? drupal_lookup_path('alias',$path) : $path;
+
+
+    if(in_array($path_alias, $shop_urls)){
+      drupal_goto("");
+    } else if(doubleCheckShopURL($path_alias, $shop_urls)) {
+      drupal_goto("");
+    } else {
+/*      echo "sorry, should the shop be closed?";
+      echo "<pre>";
+      var_dump($path_alias);
+      echo "</pre>";*/
+    }
+    
+}
+closeShop();
+
 /**
  * Preprocesses the wrapping HTML.
  *

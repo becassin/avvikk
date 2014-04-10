@@ -226,6 +226,7 @@ div.warning, div.status {
   	 display: none;
   }
   .block-views{
+    display: none;
   	position: absolute;
   	top: 24px;
   	left:  24px;
@@ -235,29 +236,31 @@ div.warning, div.status {
   }
   #block-system-main-menu{
   	width:100%;
+    margin-left: -2px;
   	li{
       @extend .normal_font_style;
+      width: 50%;
       &:nth-child(1){
-        margin-right: 16%;
-        width: 17%;
       }
       &:nth-child(2){
         margin: 0 12.5%;
         width: 8%;
+        display: none;
       }
       &:nth-child(3){
-        margin-left: 28%;
-        width: 6%;
-        margin-left: 19%;
+        text-align:right;
+        .menu{
+          margin-right:0;
+          text-align:right;
+        }
       }
     }
     ul{
       li{
         ul{
-          width: 300px;
           li{
+            width: auto !important; 
             padding: 0 !important;
-            width: auto !important;
           }
         }
         .nolink{
